@@ -908,7 +908,7 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -916,7 +916,7 @@
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -949,7 +949,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -959,7 +959,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -992,7 +992,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -1000,7 +1000,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1033,7 +1033,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -1041,7 +1041,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineARM</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1074,7 +1074,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -1082,7 +1082,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineARM64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1115,7 +1115,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -1125,7 +1125,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1158,7 +1158,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -1168,7 +1168,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineARM</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1201,7 +1201,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <PreprocessorDefinitions>WIN32;_WINDOWS;_FILE_OFFSET_BITS=64;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -1211,7 +1211,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineARM64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1638,14 +1638,14 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1695,7 +1695,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1736,14 +1736,14 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1784,14 +1784,14 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineARM</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1832,14 +1832,14 @@ del /f /q $(OutDir)\licenses\bzip2.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDataBaseFileName>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4267;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineARM64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1889,7 +1889,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1939,7 +1939,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineARM</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
@@ -1989,7 +1989,7 @@ del /f /q $(OutDir)\licenses\bzip2.txt
     <Lib>
       <TargetMachine>MachineARM64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\ARM64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\$(PlatformTarget)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
